@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+}
+
+/* FUENTES GENERALES */
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+/* BOTONES GENERALES */
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(59, 24, 92);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+/* HEADER */
+header{
+    background-color: rgb(240,240,240);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+/* CLASE HERO DE LA PÁGINA PRINCIPAL */
+#hero{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/fotohero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+.color-marca{
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#somos-astuzia .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+/* SECCIÓN DE CURSOS DE LA PÁGINA PRINCIPAL */
+#nuestros-cursos{
+    background-color: rgb(40,40,40);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-cursos .container{
+    padding: 125px 0px;
+}
+
+#nuestros-cursos p{
+    display: none;
+}
+
+#nuestros-cursos h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#nuestros-cursos .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/Fullstack.webp");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/arduino.jpg");
+}
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/python.jpg");
+}
+
+#Log-In{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(40,40,40);
+    color: white;
+    height: 80vh;
+}
+
+#Log-In h2{
+    margin-top: 0;
+    font-size: 5vw;
+}
+
+#Log-In button{
+    font-size: 3vw;
+}
+
+footer p{
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 865px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #somos-astuzia .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #somos-astuzia .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left:  30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-astuzia .img-container{
+        background-image: url("../img/somosnosotros.webp");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #somos-astuzia h2{
+        margin-top: 0;
+    }
+
+    #nuestros-cursos .cursos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-cursos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-cursos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-cursos .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(80,80,80);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/Fullstack-cortada.jpg");
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/arduino-cortada.jpg");
+    }
+    .carta:last-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/python.jpg");
+    }
+
+    /* PYTHON */
+    #info-python .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #info-python .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left:  30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #info-python .img-container{
+        background-image: url("../img/logopython.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #info-python h2{
+        margin-top: 0;
+    }
+
+    #otros-cursos-python .cursos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #otros-cursos-python p{
+        display: none;
+        margin-bottom: 30px;
+    }
+
+    #otros-cursos-python h3{
+        margin-top: 0;
+    }
+}
+

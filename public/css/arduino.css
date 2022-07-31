@@ -1,0 +1,117 @@
+/* ESTILOS DE PÁGINA DE ARDUINO */
+
+#arduino{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/arduino.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#arduino h1{
+    color: white;
+}
+
+#info-arduino .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#otros-cursos-arduino{
+    background-color: rgb(40,40,40);
+    color: white;
+    text-align: center;
+}
+
+#otros-cursos-arduino .container{
+    padding: 125px 0px;
+}
+
+#otros-cursos-arduino p{
+    display: none;
+}
+
+#otros-cursos-arduino h2{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+#otros-cursos-arduino .carta{
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#otros-cursos-arduino .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/Fullstack.webp");
+}
+
+#otros-cursos-arduino .carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/python.jpg");
+}
+
+@media (min-width: 865px){
+    /* ARDUINO */
+    #info-arduino .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #info-arduino .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left:  30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #info-arduino .img-container{
+        background-image: url("../img/arduino-objeto.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #info-arduino h2{
+        margin-top: 0;
+    }
+
+    #otros-cursos-arduino .cursos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #otros-cursos-arduino p{
+        display: none;
+        margin-bottom: 30px;
+    }
+
+    #otros-cursos-arduino h3{
+        margin-top: 0;
+    }
+}
